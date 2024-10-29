@@ -20,9 +20,15 @@ export const Footer = () => {
           <li>
             <Link to="/cookies">Cookie policy</Link>
           </li>
-          <li>Return policy</li>
-          <li>Shipping</li>
-          <li>Terms and Conditions</li>
+          <li>
+            <Link to="/return">Return policy</Link>
+          </li>
+          <li>
+            <Link to="/return">Shipping</Link>
+          </li>
+          <li>
+            <Link to="/termsandconditions">Terms and Conditions</Link>
+          </li>
         </ul>
       </section>
       <section>

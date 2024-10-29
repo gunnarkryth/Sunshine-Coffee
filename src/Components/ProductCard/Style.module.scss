@@ -1,9 +1,16 @@
 .ProductCard {
   position: relative;
   border-radius: 1rem;
-  background-color: white;
+  background-color: #e6e6e6;
   // padding: 6px;
   // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  height: 750px;
+  padding: 10px 50px 30px;
+
+  .title {
+    text-transform: capitalize;
+    text-align: center;
+  }
 
   .img_container {
     display: flex;
@@ -44,22 +51,32 @@
     grid-template-rows: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
-    height: 7rem;
+    // height: 7rem;
 
-    .title {
-      text-transform: capitalize;
+    .dotsContainer {
+      // background-color: red;
+      height: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 6px;
+      align-items: center;
+      * {
+        width: 20px;
+        height: 20px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+      }
+
+      .dotFilled {
+        background-color: #b46538;
+      }
+      .dotEmpty {
+        background-color: #111111;
+      }
     }
 
     .price {
-      position: absolute;
-      bottom: 0;
-      align-self: center;
-      justify-self: center;
-      border-radius: 0 0 6px 6px;
-      background-color: green;
-      width: 100%;
-      color: white;
-      text-align: center;
     }
   }
 }

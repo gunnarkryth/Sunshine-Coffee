@@ -26,17 +26,21 @@ export const ProductsContainer = () => {
   }, []);
 
   return (
-    <section className={s.ProductsContainer}>
-      {products?.map((product) => {
-        return (
-          <ProductCard
-            key={product.id}
-            title={product.name}
-            img={product.image}
-            price={product.price}
-          />
-        );
-      })}
-    </section>
+    <>
+      <h2>Our picks for you</h2>
+      <section className={s.ProductsContainer}>
+        {products?.map((product) => {
+          return (
+            <ProductCard
+              key={product.id}
+              title={product.name}
+              img={product.image}
+              roast={product.roast}
+              price={product.price}
+            />
+          );
+        })}
+      </section>
+    </>
   );
 };

@@ -6,3 +6,4 @@ npm install sass
 npm install react-router-dom
 npm install react-icons
 npm run dev
+Start-Process "localhost:5173"
