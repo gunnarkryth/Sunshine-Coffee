@@ -11,6 +11,7 @@ export const ProductCard = ({ title, img, roast, price }) => {
         className={s.img_container}
       ></div>
       <article>
+        {/* <p>Roast:</p> */}
         <div className={s.dotsContainer}>
           {[1, 2, 3, 4, 5].map((value) => {
             return (
@@ -25,9 +26,7 @@ export const ProductCard = ({ title, img, roast, price }) => {
         </div>
         <p className={s.price}>{price} DKK</p>
       </article>
-      <button className={s.CartButton}>
-        <CgShoppingCart />
-      </button>
+      <button className={s.CartButton}>Add to cart</button>
     </figure>
   );
 };

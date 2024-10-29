@@ -2,21 +2,24 @@
   position: relative;
   border-radius: 1rem;
   background-color: #e6e6e6;
+  padding: 10px 50px 30px;
   // padding: 6px;
   // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
-  height: 750px;
-  padding: 10px 50px 30px;
+  // height: 750px;
 
   .title {
-    text-transform: capitalize;
+    margin: 0;
+    padding: 1rem;
+    font-size: 5rem;
     text-align: center;
+    text-transform: capitalize;
   }
 
   .img_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 0.5rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,45 +30,39 @@
   }
 
   .CartButton {
-    position: absolute;
     top: 1rem;
     right: 1rem;
     border: none;
-    border-radius: 50%;
+    border: 2px solid #111111;
+    border-radius: 0.5rem;
     background: none;
-    background-color: green;
+    // background-color: green;
+    width: 100%;
     // padding: 6px;
-    aspect-ratio: 1/1;
-    height: 30px;
-    color: white;
-
-    svg {
-      filter: drop-shadow(0 0 6px rgb(0, 0, 0));
-      width: 100%;
-      height: 100%;
-    }
+    height: 60px;
+    color: #111111;
   }
 
   article {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     // height: 7rem;
 
     .dotsContainer {
-      // background-color: red;
-      height: 20px;
-      width: 100%;
       display: flex;
       justify-content: space-evenly;
-      gap: 6px;
       align-items: center;
+      // gap: 0.725rem;
+      width: 30%;
+      // background-color: red;
+      height: 3rem;
       * {
-        width: 20px;
-        height: 20px;
-        aspect-ratio: 1/1;
         border-radius: 50%;
+        // height: 20px;
+        aspect-ratio: 1/1;
+        width: 0.75rem;
       }
 
       .dotFilled {
@@ -77,6 +74,8 @@
     }
 
     .price {
+      width: 100%;
+      text-align: left;
     }
   }
 }
