@@ -10,6 +10,7 @@ import { Return } from "./Pages/Return";
 import { Shipping } from "./Pages/Shipping";
 import { TermsAndConditions } from "./Pages/TermsAndConditions";
 import { SingleProduct } from "./Pages/SingleProduct";
+import { Cart } from "./Components/Cart/Cart";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<MainLayout />}>
               <Route index element={<Home />} />
               <Route path="products" element={<AllProducts />} />
+              <Route path="cart" element={<Cart />} />
               <Route path="cookies" element={<Cookies />} />
               <Route path="return" element={<Return />} />
               <Route path="shipping" element={<Shipping />} />
