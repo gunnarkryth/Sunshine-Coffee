@@ -1,12 +1,17 @@
 .ProductCard {
   position: relative;
-  border-radius: 1rem;
-  background-color: #e6e6e6;
-  padding: 10px 50px 30px;
   // padding: 6px;
   // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
   // height: 750px;
-
+  transition: 300ms ease-in-out;
+  border-radius: 1rem;
+  background-color: #e6e6e6;
+  padding: 10px 50px 30px;
+  &:hover {
+    scale: 105%;
+    transition: 300ms ease-in-out;
+    box-shadow: 0 0 1rem #00000050;
+  }
   .title {
     margin: 0;
     padding: 1rem;
@@ -32,6 +37,7 @@
   .CartButton {
     top: 1rem;
     right: 1rem;
+    transition: 100ms ease-in-out;
     border: none;
     border: 2px solid #111111;
     border-radius: 0.5rem;
@@ -41,6 +47,14 @@
     // padding: 6px;
     height: 60px;
     color: #111111;
+    font-size: 1rem;
+    &:hover {
+      transition: 100ms ease-in-out;
+      border: white;
+      background-color: green;
+      color: white;
+    font-size: 1.05rem;
+    }
   }
 
   article {
