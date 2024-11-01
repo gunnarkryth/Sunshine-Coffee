@@ -32,7 +32,7 @@ export const ProductsContainer = () => {
         {products?.map((product) => {
           return (
             <ProductCard
-              key={product.id}
+              id={product.id}
               title={product.name}
               img={product.image}
               roast={product.roast}

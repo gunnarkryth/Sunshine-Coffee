@@ -9,6 +9,7 @@ import { Cookies } from "./Pages/Cookies";
 import { Return } from "./Pages/Return";
 import { Shipping } from "./Pages/Shipping";
 import { TermsAndConditions } from "./Pages/TermsAndConditions";
+import { SingleProduct } from "./Pages/SingleProduct";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                 path="termsandconditions"
                 element={<TermsAndConditions />}
               />
+              <Route path="products/:id" element={<SingleProduct />} />
             </Route>
           </Routes>
         </Router>
